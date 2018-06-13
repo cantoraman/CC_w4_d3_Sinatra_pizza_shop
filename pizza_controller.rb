@@ -46,5 +46,3 @@ post '/pizza-orders/:id' do
   @order.update()
   redirect to '/pizza-orders'
 end
-
-p "this is a message to test"
