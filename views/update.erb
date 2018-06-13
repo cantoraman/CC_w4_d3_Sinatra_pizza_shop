@@ -8,11 +8,11 @@
 
   <label for="pizza-select">Select a pizza:</label>
   <select id="pizza-select" type="text" name="topping"/>
-    <option value="Margherita">Margherita</option>
-    <option value="Italian Sausage">Italian Sausage</option>
-    <option value="Pepperoni">Pepperoni</option>
-    <option value="Ham and Pineapple">Ham and Pineapple</option>
-    <option value="Meat Feast">Meat Feast</option>
+    <option value="Margherita" <%= "selected" if@order.topping== "Margherita" %>>Margherita</option>
+    <option value="Italian Sausage"<%= "selected" if@order.topping== "Italian Sausage" %>>Italian Sausage</option>
+    <option value="Pepperoni"<%= "selected" if@order.topping== "Pepperoni" %>>Pepperoni</option>
+    <option value="Ham and Pineapple"<%= "selected" if@order.topping== "Ham and Pineaplle" %>>Ham and Pineapple</option>
+    <option value="Meat Feast"<%= "selected" if@order.topping== "Mear Feast" %>>Meat Feast</option>
   </select>
 
   <label for="quantity">Quantity:</label>

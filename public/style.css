@@ -1,0 +1,9 @@
+body {
+ background-color: tomato;
+}
+
+.each_order{
+  background-color: salmon;
+  align-self: center;
+  text-align: center;
+}
